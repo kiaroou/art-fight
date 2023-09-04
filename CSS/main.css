@@ -1,0 +1,245 @@
+html, body {
+  cursor: url("/images/cursor_1.ico"), default;
+}
+
+/* Preloader */
+#preloader {
+  background: #000
+    url("https://samherbert.net/svg-loaders/svg-loaders/spinning-circles.svg")
+    no-repeat center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.pixel-font {
+  font-family: 'ChronoType';
+}
+
+.poppin-font {
+  font-family: 'Poppins';
+  font-size: 1.4rem;
+}
+
+.font-button {
+  background-color: transparent;
+  border: 0;
+  width: fit-content;
+  height: fit-content;
+  padding:0;
+  text-shadow: 0px 0px 0px #000; 
+  font-size:1.4rem;
+}
+
+a {
+  cursor: url("/images/cursor_2.ico"), pointer;
+}
+
+@media (max-width: 768px) {
+  .character {
+    position: fixed;
+    left:-15rem;
+    text-align: center;
+    width:100%;
+    animation-name: movement;
+    animation-duration: 4s;
+    z-index:-900;
+  }
+}
+
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    text-align: center;
+    height:70px;
+    z-index:10;
+ }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 98%;
+    margin-inline: 15px;
+    text-align: center;
+    min-height:150px;
+    border-radius: 10px;
+    animation-name: dialogue;
+   animation-duration: 4s;
+ }
+
+ .chat {
+  display: flex;
+  align-items: end;
+  margin-bottom: 1rem;
+ }
+ 
+ .dialogue {
+     padding: 20px;
+    background-color: #000;
+    border: 8px groove #fff;
+    z-index:4;
+    min-height:150px;
+    width: 100%;
+ }
+ 
+ 
+ @keyframes dialogue {
+   0%   { bottom:-13rem;}
+   50%  {bottom:1rem;}
+   100% {bottom:0rem;}
+ }
+
+.box {
+  height:300px;
+  margin-inline: 10px;
+  border: 8px groove #fff;
+  background:#110a20 url('/images/SUCKLET.gif') no-repeat;
+  background-size: cover;
+}
+
+.poison-sucklet {
+  height:300px;
+  margin-inline: 10px;
+  border: 8px groove #fff;
+  background:#110a20 url('/images/SUCKLET_POISON.gif') no-repeat;
+  background-size: cover;
+}
+
+.sparkle-sucklet {
+  height:300px;
+  margin-inline: 10px;
+  border: 8px groove #fff;
+  background:#110a20 url('/images/SUCKLET_SPARKLE.gif') no-repeat;
+  background-size: cover;
+}
+
+ .character {
+  position: fixed;
+  right: 0;
+  bottom:10rem;
+  text-align: center;
+  width:100%;
+  animation-name: movement;
+  animation-duration: 4s;
+  z-index:-900;
+}
+
+@keyframes movement {
+  0%   {right:-1000px; bottom:13rem;}
+  50%  {right:0px; bottom:13rem;}
+  100% {bottom:10rem;}  
+}
+
+.chevron {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #ffffff;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation-name: button;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+  }
+
+  .chevron a {
+    color:#fff
+  }
+  
+  @keyframes button {
+    0% {
+      opacity: 0.3;
+    }
+      
+      25% {
+          opacity: 0.5;
+      }
+  
+      50% {
+          opacity: 1;
+      }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+  
+  .tabcontent {
+    display: none;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+  }
+
+  .tablinks {
+    cursor: url("/images/cursor_2.ico"), pointer;
+  }
+  
+  .active {
+  display: contents;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .grey {
+      color: #ffffff75
+    }
+
+    button {
+      padding:10px 20px;
+      background-color: #000;
+      border: 5px solid #fff;
+      color: #fff;
+      text-shadow: 3px 3px 0px #000; 
+      width:500px;
+      transition: all ease-in-out 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .fight {
+      background: url('/images/button_1.png');
+    }
+
+    .fight:hover {
+      box-shadow: 5px 10px 0px #ff6b097a;
+      cursor: url("/images/cursor_2.ico"), pointer;
+    }
+
+    .run {
+      background: url('/images/button_2.png');
+    }
+
+    .run:hover {
+      box-shadow: 5px 10px 0px #336ba06c;
+      cursor: url("/images/cursor_2.ico"), pointer;
+    }
+
+    .brder {
+      margin-bottom:30px ;
+      width:500px;
+      margin-inline: auto;
+    }

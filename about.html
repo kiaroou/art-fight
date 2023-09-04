@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABOUT</title>
+    <link href="/Font/webfont.css" rel="stylesheet">
+    <link href="/CSS/main.css" rel="stylesheet">
+    <link href="/CSS/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/844f3a93f0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/JS/text.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</head>
+  <style>
+    body {
+    background:url('/images/home_bg.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    font-family: 'ChronoType';
+    font-size: 1.8rem;
+    color:#fff
+    }
+
+    .card {
+      background: url('/images/bg_text.png');
+      border-radius: 0%;
+      border: 0;
+      width:800px;
+      margin: auto;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+     .card {
+      width:100%;
+      margin: auto;
+      text-align: center;
+     }
+    }
+
+    .card-body {
+      border: 2px solid #fff;
+      color:#fff;
+      padding: 25px 35px;
+    }
+
+    a {
+      text-decoration: none;
+      color:#ffffff;
+    }
+
+  </style>
+  <body>
+    <div id="preloader"></div>
+     
+<div class="text-center">
+  <img src="images/logo.png" style="width:400px;">
+
+  <div class="card p-2 mt-4">
+    <div class="card-body">
+      "Under the Moon" is a interactive website I made for Art Fight! You play as a small <a href="/secrets/sucklet.html"><i>sucklet</i></a> as you explore the festival. Tonight is when vampires and werewolves alike celebrate the blood moon together. There are several attractions and activities to participate in! There are three main places you can visit; The Haunted House, Food Court, and Game Corner. One more thing, try click on anything that seems . . . out of place.
+    </div>
+  </div>
+
+  <div class="card p-2 mt-4">
+    <div class="card-body">
+      <p>A word from the CREATOR</p>
+      hey my name is kiaroou or kia for short, i made this project because i wanted to make a silly game but i have no actual coding skills so why not make it a website instead. i know its short but i spent too much time on this i hope you like this thank you for checking it out gudbye
+    </div>
+  </div>
+  
+  <div class="my-4">
+    <a href="/title.html">Go Back?</a> // <button onclick="myFunction()" class="font-button"><i class="far fa-eye-slash"></i></button>
+  </div>
+</div>
+
+<audio loop="true" autoplay="true" src="https://cdn.discordapp.com/attachments/1111724727522832524/1134464661614493766/Palm_Tree_Panic.mp3" hidden="true" type="audio/wav"></audio>
+
+
+<script>
+  //preloader
+  var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+loader.style.display = "none";
+});
+
+//Fade out, optional
+var s = document.getElementById("preloader").style;
+s.opacity = 1;
+(function fade() {
+(s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+})();
+</script>
+
+</body>
+</html>

@@ -230,7 +230,7 @@ a {
     }
 
     .run {
-      background: url('/art-fight/images/button_2.png');
+      background: url('art-fight/images/button_2.png');
     }
 
     .run:hover {

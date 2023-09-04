@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>???</title>
+    <link href="/Font/webfont.css" rel="stylesheet">
+    <link href="/CSS/main.css" rel="stylesheet">
+    <link href="/CSS/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <script src="https://kit.fontawesome.com/844f3a93f0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/JS/text.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</head>
+  <style>
+    body {
+    background-color: #000000;
+    font-family:'ChronoType';
+    color: #fbf6f6;
+    font-size: 2rem;
+    overflow: hidden;
+    }
+
+    .header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   padding: 15px;
+   background-color: #000;
+   text-align: center;
+   height:70px;
+   z-index:10;
+}
+
+    .bg {
+      background: url('/images/bg_hallway.png') no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: opacity(60%);
+      position: absolute;
+      top:0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+a {
+    text-decoration: none;
+    color:#7493b6;
+  }
+
+  </style>
+  <body>
+    <div id="preloader"></div>
+<div class="header">You bumped into <a href="https://artfight.net/character/3128176">???</a> // <button onclick="myFunction()" class="font-button"><i class="far fa-eye-slash"></i></button></div>
+<div class="bg"></div>
+
+    <div class="footer">
+        <div class="character">
+            <img src="/characters/01.gif">
+            </div>
+<div class="chat">
+
+<div class="col-lg-2 col-sm-12 order-lg-1 order-sm-2">
+  <div class="box"></div>
+</div>
+
+<div class="col-lg col-sm-12 order-lg-2 order-sm-1">
+  <div class="dialogue">
+    <div id="start" class="tabcontent active">
+    <span class="grey">What should you do?</span>
+    <hr class="brder">
+    <button class="fight mx-lg-2 mb-sm-3 tablinks" onclick="openCity(event, 'fight')">✦ ｡˚ FIGHT</button>
+    <button class="run mx-lg-2 tablinks" onclick="openCity(event, 'run')">˚ ｡˚ RUN</button>
+    </div>
+
+    <!-- FIGHT -->
+    <div id="fight" class="tabcontent">
+    <p class="m-0">
+        <span class="grey">(You throw a small [SUCKLET] at him but he remains unaffected and unbothered)</span>
+    </p>
+    <button class="chevron" onclick="openCity(event, 'start')">></button>
+      </div>
+      
+    <!-- RUN -->
+    <div id="run" class="tabcontent">
+      <p class="m-0">
+          <span class="grey">(You go past ??? and walk toward the door to the next room )</span>
+      </p>
+      <button class="chevron"><a href="ajax.html">></a></button>
+        </div>
+    <!---->
+</div>
+</div>
+
+    </div>
+  
+</div>
+<audio loop="true" autoplay="true" src="https://cdn.discordapp.com/attachments/1093968552853254276/1107535502283907132/OMORI_OST_-_004_Spaces_In-between.mp3" hidden="true" type="audio/wav"></audio>
+<script>
+  //preloader
+  var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+loader.style.display = "none";
+});
+
+//Fade out, optional
+var s = document.getElementById("preloader").style;
+s.opacity = 1;
+(function fade() {
+(s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+})();
+</script>
+  </body>
+</html>

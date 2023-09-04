@@ -1,5 +1,5 @@
 html, body {
-  cursor: url("/art-fight/images/cursor_1.ico"), default;
+  cursor: url("art-fight/images/cursor_1.ico"), default;
 }
 
 /* Preloader */
@@ -38,7 +38,7 @@ html, body {
 }
 
 a {
-  cursor: url("/art-fight/images/cursor_2.ico"), pointer;
+  cursor: url("art-fight/images/cursor_2.ico"), pointer;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +103,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/art-fight/images/SUCKLET.gif') no-repeat;
+  background:#110a20 url('art-fight/images/SUCKLET.gif') no-repeat;
   background-size: cover;
 }
 
@@ -111,7 +111,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/art-fight/images/SUCKLET_POISON.gif') no-repeat;
+  background:#110a20 url('art-fight/images/SUCKLET_POISON.gif') no-repeat;
   background-size: cover;
 }
 
@@ -119,7 +119,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/art-fight/images/SUCKLET_SPARKLE.gif') no-repeat;
+  background:#110a20 url('art-fight/images/SUCKLET_SPARKLE.gif') no-repeat;
   background-size: cover;
 }
 
@@ -186,7 +186,7 @@ a {
   }
 
   .tablinks {
-    cursor: url("/art-fight/images/cursor_2.ico"), pointer;
+    cursor: url("art-fight/images/cursor_2.ico"), pointer;
   }
   
   .active {
@@ -221,12 +221,12 @@ a {
     }
 
     .fight {
-      background: url('/art-fight/images/button_1.png');
+      background: url('art-fight/images/button_1.png');
     }
 
     .fight:hover {
       box-shadow: 5px 10px 0px #ff6b097a;
-      cursor: url("/art-fight/images/cursor_2.ico"), pointer;
+      cursor: url("art-fight/images/cursor_2.ico"), pointer;
     }
 
     .run {
@@ -235,7 +235,7 @@ a {
 
     .run:hover {
       box-shadow: 5px 10px 0px #336ba06c;
-      cursor: url("/art-fight/images/cursor_2.ico"), pointer;
+      cursor: url("art-fight/images/cursor_2.ico"), pointer;
     }
 
     .brder {

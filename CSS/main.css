@@ -38,7 +38,7 @@ html, body {
 }
 
 a {
-  cursor: url("/images/cursor_2.ico"), pointer;
+  cursor: url("images/cursor_2.ico"), pointer;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +103,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/images/SUCKLET.gif') no-repeat;
+  background:#110a20 url('images/SUCKLET.gif') no-repeat;
   background-size: cover;
 }
 
@@ -111,7 +111,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/images/SUCKLET_POISON.gif') no-repeat;
+  background:#110a20 url('images/SUCKLET_POISON.gif') no-repeat;
   background-size: cover;
 }
 
@@ -119,7 +119,7 @@ a {
   height:300px;
   margin-inline: 10px;
   border: 8px groove #fff;
-  background:#110a20 url('/images/SUCKLET_SPARKLE.gif') no-repeat;
+  background:#110a20 url('images/SUCKLET_SPARKLE.gif') no-repeat;
   background-size: cover;
 }
 
@@ -186,7 +186,7 @@ a {
   }
 
   .tablinks {
-    cursor: url("/images/cursor_2.ico"), pointer;
+    cursor: url("images/cursor_2.ico"), pointer;
   }
   
   .active {
@@ -221,21 +221,21 @@ a {
     }
 
     .fight {
-      background: url('/images/button_1.png');
+      background: url('images/button_1.png');
     }
 
     .fight:hover {
       box-shadow: 5px 10px 0px #ff6b097a;
-      cursor: url("/images/cursor_2.ico"), pointer;
+      cursor: url("images/cursor_2.ico"), pointer;
     }
 
     .run {
-      background: url('/images/button_2.png');
+      background: url('images/button_2.png');
     }
 
     .run:hover {
       box-shadow: 5px 10px 0px #336ba06c;
-      cursor: url("/images/cursor_2.ico"), pointer;
+      cursor: url("images/cursor_2.ico"), pointer;
     }
 
     .brder {

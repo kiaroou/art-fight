@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SWEET BAKERY</title>
+    <link href="/Font/webfont.css" rel="stylesheet">
+    <link href="/CSS/main.css" rel="stylesheet">
+    <link href="/CSS/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <script src="https://kit.fontawesome.com/844f3a93f0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/JS/text.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</head>
+  <style>
+    body {
+    background-color: #fbf6f6;
+    font-family:'ChronoType';
+    color: #fbf6f6;
+    font-size: 2rem;
+    overflow: hidden;
+    }
+
+    .bg {
+      background: url('/images/appearance.png') no-repeat;
+      background-position: center;
+      background-size: cover;
+      filter: opacity(60%);
+      position: absolute;
+      top:0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+    }
+  
+
+a {
+    text-decoration: none;
+    color:#ffadad;
+  }
+
+  .box {
+  background-color:#F9C6D9
+}
+
+.char2 {
+  position: fixed;
+  right: 0rem;
+  bottom:10rem;
+  animation-name: movement;
+  animation-duration: 4s;
+}
+
+@media (max-width: 768px) {
+  .char2 {
+    position: fixed;
+    right: -30rem;
+    bottom: 10rem;
+    animation: none;
+    z-index: -9;
+  }
+
+  .char1 {
+    position: fixed;
+    right: -5rem;
+    bottom: 10rem;
+    animation: none;
+  }
+}
+
+.dango {
+  background: url('/images/button_4.png');
+  text-shadow: -3px 0px 0px #000, 1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
+}
+
+.bun {
+  background: url('/images/button_3.png');
+  text-shadow: -3px 0px 0px #000, 1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
+}
+
+  </style>
+  <body>
+    <div id="preloader"></div>
+<div class="header">You encountered <a href="https://artfight.net/character/2171498.rosabelle-eleanor">Rosabelle</a> & <a href="https://artfight.net/character/2875397.lily">Lily</a> // <button onclick="myFunction()" class="font-button"><i class="far fa-eye-slash"></i></button></div>
+<div class="bg"></div>
+
+    <div class="footer">
+        <div class="character d-flex">
+            <div class="col-lg-auto"><img src="/characters/06.gif" class="char1"></div>
+            <div class="col-lg-auto"><img src="/characters/04.gif" class="char2"></div>
+            </div>
+
+<div class="chat">
+
+  <div class="col-lg-2 col-sm-12 order-lg-1 order-sm-2">
+  <div class="box"></div>
+</div>
+
+<div class="col-lg col-sm-12 order-lg-2 order-sm-1">
+    <div class="dialogue">
+      <div id="one" class="tabcontent active">
+      You walk up the stall and you're greeted by 2 of the bakers
+      What do you want to buy from them?
+      <button class="dango mx-lg-2 mb-sm-3 tablinks" onclick="openCity(event, 'two')">DANGO</button>
+      <button class="bun mx-lg-2 tablinks" onclick="openCity(event, 'two')">BUN COOKIES</button>
+      </div>
+      
+      <div id="two" class="tabcontent">
+      <p class="m-0">
+          Rosabelle: Your order will given to you shortly~
+          <br>
+          <span class="grey">(You patiently wait for your food . . .)</span>
+      </p>
+      <button class="chevron"><a href="/game/food!/choux.html">></a></button>
+        </div>
+  </div>
+  </div>
+</div>
+  
+</div>
+<audio loop="true" autoplay="true" src="https://cdn.discordapp.com/attachments/1111724727522832524/1134461371505979552/OMORI_OST_-_Mari_Boss_Battle_EXTENDED.mp3" hidden="true" type="audio/wav"></audio>
+<script>
+  //preloader
+  var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+loader.style.display = "none";
+});
+
+//Fade out, optional
+var s = document.getElementById("preloader").style;
+s.opacity = 1;
+(function fade() {
+(s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+})();
+</script> 
+</body>
+</html>
